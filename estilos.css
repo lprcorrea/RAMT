@@ -1,0 +1,280 @@
+/* Reseta margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do documento */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte mais comum e fácil de ler */
+    background-color: #f4f6f9; /* Fundo claro, tipo cinza claro */
+    color: #333333; /* Texto escuro para boa legibilidade */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #230E6F; /* Azul institucional */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação */
+nav {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    background-color: #007BFF; /* Azul claro para os botões */
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #00568C; /* Azul escuro no hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs e Selects */
+input, select {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    color: #333333; /* Texto escuro nos campos */
+    background-color: #f1f3f5; /* Fundo claro para os campos */
+    border: 1px solid #cccccc; /* Borda suave */
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Efeito de foco nos inputs/selects */
+input:focus, select:focus {
+    border-color: #00568C; /* Azul no foco */
+    outline: none;
+}
+
+/* Estilos para os botões de ação (Excluir e Editar) */
+button.excluir {
+    background-color: #DC3545; /* Vermelho para botões de excluir */
+}
+
+button.excluir:hover {
+    background-color: #C82333; /* Vermelho escuro no hover */
+}
+
+/* Lista de cidadãos */
+#listaCidadãos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.cidadão-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cidadão-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.cidadão-info .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        font-size: 26px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
+
+/* Para telas menores (smartphones em modo retrato) */
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+
+    form {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    input, select {
+        padding: 10px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+}
+
+/* Estilo de impressão */
+@media print {
+    body {
+        background-color: white;
+        color: #000;
+    }
+
+    button {
+        display: none;
+    }
+
+    header {
+        font-size: 22px;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid #ddd;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+}
+
+/* Estilos específicos para o tipo sanguíneo */
+div input[type="radio"] {
+    margin-right: 10px; /* Espaçamento entre os radio buttons */
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div label {
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+/* Estilos para o campo de tipo sanguíneo */
+.campo-tipo-sanguineo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-tipo-sanguineo label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Garantir que o texto tenha boa legibilidade */
+}
+
+.tipos-sanguineos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permite que os inputs se ajustem em várias linhas se necessário */
+}
+
+/* Ajuste no input de tipo sanguíneo */
+.tipos-sanguineos input {
+    margin-right: 5px;
+}
+
+/* Estilos para o campo de data de nascimento */
+.campo-data-nascimento {
+    margin-bottom: 15px;
+}
+
+.campo-data-nascimento label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Agora o texto fica legível */
+}
+
+#dataNascimento {
+    padding: 12px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: #f1f3f5;
+    color: #333;
+    border: 1px solid #cccccc;
+    transition: all 0.3s ease-in-out;
+}
+
+#dataNascimento:focus {
+    border-color: #00568C;
+    outline: none;
+}
+/* Estilo para a imagem da bandeira */
+.bandeira-mt {
+    display: block; /* Garante que a imagem seja tratada como bloco */
+    margin: 20px auto; /* Centraliza a imagem e adiciona uma margem */
+    width: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+    max-width: 300px; /* Tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}

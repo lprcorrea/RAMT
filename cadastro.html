@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cidadão</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Novo Cidadão</h1>
+        <form id="formCadastro">
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+            <input type="text" id="nomePai" placeholder="Nome do Pai" required>
+            <input type="text" id="nomeMae" placeholder="Nome da Mãe" required>
+            <!-- Campo de Data de Nascimento -->
+<div class="campo-data-nascimento">
+    <label for="dataNascimento">Data de Nascimento:</label>
+    <input type="date" id="dataNascimento" placeholder="Selecionar uma data de nascimento" required>
+</div>
+            <select id="localNascimento" required>
+                <option value="Brasília">Região brasileira administrada por Brasília</option>
+                <option value="Mato Grosso">Região Autônoma de Mato Grosso</option>
+            </select>
+<!-- Campo Tipo Sanguíneo -->
+<!-- Campo Tipo Sanguíneo -->
+<div class="campo-tipo-sanguineo">
+    <label for="tipoSanguineo">Selecione o Tipo Sanguíneo:</label>
+    <div class="tipos-sanguineos">
+        <label>
+            <input type="radio" id="a" name="tipoSanguineo" value="A">
+            A
+        </label>
+        <label>
+            <input type="radio" id="b" name="tipoSanguineo" value="B">
+            B
+        </label>
+        <label>
+            <input type="radio" id="ab" name="tipoSanguineo" value="AB">
+            AB
+        </label>
+        <label>
+            <input type="radio" id="o" name="tipoSanguineo" value="O">
+            O
+        </label>
+        <!-- Novos tipos sanguíneos adicionados -->
+        <label>
+            <input type="radio" id="a_negativo" name="tipoSanguineo" value="A-">
+            A-
+        </label>
+        <label>
+            <input type="radio" id="b_negativo" name="tipoSanguineo" value="B-">
+            B-
+        </label>
+        <label>
+            <input type="radio" id="ab_negativo" name="tipoSanguineo" value="AB-">
+            AB-
+        </label>
+        <label>
+            <input type="radio" id="o_negativo" name="tipoSanguineo" value="O-">
+            O-
+        </label>
+    </div>
+</div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
