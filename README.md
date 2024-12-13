@@ -56,14 +56,6 @@ Se você quiser contribuir para o projeto, siga estas etapas:
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
-# 📬 Contato
-
-Se você tiver alguma dúvida, entre em contato comigo:
-
-- **Email**: seuemail@dominio.com
-- **LinkedIn**: [seu-linkedin](https://www.linkedin.com/in/seu-linkedin)
-- **GitHub**: [seu-usuario](https://github.com/seu-usuario)
-
 ---
 
 Obrigado por visitar o projeto! 🚀
