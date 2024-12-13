@@ -26,12 +26,12 @@ Aqui está a imagem que representa a bandeira de Mato Grosso, exibida na página
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/lprcorrea/RAMT.git
     ```
    
 2. Navegue até o diretório do projeto:
     ```bash
-    cd nome-do-repositorio
+    cd RAMT
     ```
 
 3. Abra o arquivo `index.html` em seu navegador.
